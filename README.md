@@ -1,5 +1,3 @@
-[american-flag](https://user-images.githubusercontent.com/67118137/121579567-d440fa80-c9f9-11eb-88ef-9fc630d35fc6.png)
-
 Hello! Welcome to the no nonsense United States of America Website!
 
 The goal of this site is to convey a simple approach to the United States of America. 
