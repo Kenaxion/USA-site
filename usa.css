@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    cursor: default;
+    height: 100%;
+}
+
+body {
+   background-color: white;
+}
+
+#wrapper {
+    margin: auto;
+    height: 110px;
+    width: 100%;
+    background: #0a2458;
+}
+
+#wrapper > ul {
+    margin: auto;
+    position: relative;
+    color: white;
+    list-style: none;
+    padding-top: 5px;
+}
+
+#wrapper ul #title1 {
+    letter-spacing: .5rem;
+    width: 620px;
+    top: 10px;
+    left: 20px;
+    position: relative;
+     font-weight: lighter;
+    font-size: 30px; 
+    border-bottom: double white 5px;
+    text-shadow: 0px 3px 8px black;
+}
+
+#wrapper ul #title2 {
+    /* display: flex; */
+    text-align: right;
+    letter-spacing: .5rem;
+    position: relative;
+    font-weight: lighter;
+    font-size: 22px; 
+    width: 250px;
+    left: 640px;
+    top: 5px;
+    border-top: double white 5px;
+    padding-top: 2px;
+    text-shadow: 0px 3px 8px black;
+}
+
+#wrapper2 {
+    background-color: rgb(255, 239, 209);
+    height: 500px;
+    top: 170px;
+    width: 100%;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#state-teaser {
+    float: left;
+    position: absolute;
+    font-family: "Mercury Display Semibold";
+    padding-top: 130px;
+    padding-left: 200px;
+}
+
+#state-teaser h1  {
+    font-size: 55px;
+    letter-spacing: .4rem;
+    position: absolute;
+    width: 550px;
+    bottom: .5px;
+    font-weight: bolder;
+    color: #0a2458;
+}
+
+#state-teaser img {
+    position: absolute;
+    float: left;
+    width: 400px;
+}
+
+#state-teaser p {
+    letter-spacing: .2rem;
+    width: 450px;
+    word-spacing: normal;
+    top: 140px;
+    line-height: 45px;
+    font-size: 25px;
+    left: 650px;
+    text-align: left;
+    position: absolute;
+}
+
+#state-teaser .redwords {
+    color: rgb(178, 34, 52);
+}
+
