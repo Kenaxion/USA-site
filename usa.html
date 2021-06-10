@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="usa.css">
+  <link rel="stylesheet" href="nav.css">
+
+  <title>Document</title>
+  <script src="usa.js" defer></script>
+  <script src="dropdownfunctions.js" defer></script>
+</head>
+
+<body>
+  <div id="zindex">
+    <div id="wrapper">
+      <ul id="titles">
+        <h3 id="title1">The United States of America</h3>
+        <h3 id="title2">At A Glance</h3>
+      </ul>
+      <nav id="navbar">
+        <ul>
+          <li class="drop">
+            <a href="#">
+              <h2 class="category">States</h2>
+            </a>
+            <ul class="links" id="States">
+              <!-- js api list -->
+            </ul>
+          </li>
+          <li class="drop" id="col"><a href="#">
+              <h2 class="category">13 Colonies</h2>
+            </a>
+            <ul class="links" id="13Colonies">
+              <li><a href="#">New Hampshire</a></li>
+              <li><a href="#">Massachusetts</a></li>
+              <li><a href="#">Connecticut</a></li>
+              <li><a href="#">Rhode Island</a></li>
+              <li><a href="#">New York</a></li>
+              <li><a href="#">New Jersey</a></li>
+              <li><a href="#">Pennsylvania</a></li>
+              <li><a href="#">Delaware</a></li>
+              <li><a href="#">Maryland</a></li>
+              <li><a href="#">Virginia</a></li>
+              <li><a href="#">North Carolina</a></li>
+              <li><a href="#">South Carolina</a></li>
+              <li><a href="#">Georgia</a></li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">
+              <h2 class="category">National Monuments</h2>
+            </a>
+            <ul class="links" id="NationalMonuments">
+
+            </ul>
+          </li>
+          <li class="drop"><a href="#">
+              <h2 class="category">Presidents</h2>
+            </a>
+            <ul class="links" id="pres">
+
+            </ul>
+          </li>
+          <li class="drop"><a href="#">
+              <h2 class="category">Trivia</h2>
+            </a>
+            <ul class="links" id="triv">
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div id="wrapper2">
+    <div id="state-teaser">
+      <h1 id="state-header"></h1>
+      <img id="state-flag" alt="State flags" />
+      <p id="rand-state">
+        <span class="redwords">Abbreviation:</span> <span class="apidata" id="abv"></span> <br>
+        <span class="redwords">Capital:</span> <span class="apidata" id="cap"></span> <br>
+        <span class="redwords">Congressional Members:</span> <span class="apidata" id="reps"></span> <br>
+        <span class="redwords">2019 Population:</span> <span class="apidata" id="pop"></span> <br>
+        <span class="redwords">Ratification Date:</span><span class="apidata" id="ratif"></span> <br>
+      </p>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

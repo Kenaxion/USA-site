@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Alabama",
+    "abv": "AL",
+    "capital": "Montgomery",
+    "num_reps": "7",
+    "population": "4,903,185",
+    "ratified": "Dec 14, 1819"
+  },
+  {
+    "name": "Alaska",
+    "abv": "AK",
+    "capital": "Juneau",
+    "num_reps": "1",
+    "population": "731,545",
+    "ratified": "Jan 3, 1959"
+  },
+  {
+    "name": "Arizona",
+    "abv": "AZ",
+    "capital": "Phoenix",
+    "num_reps": "9",
+    "population": "7,278,717",
+    "ratified": "Feb 14, 1912"
+  },
+  {
+    "name": "Arkansas",
+    "abv": "AR",
+    "capital": "Little Rock",
+    "num_reps": "4",
+    "population": "3,017,804",
+    "ratified": "Jun 15, 1836"
+  },
+  {
+    "name": "California",
+    "abv": "CA",
+    "capital": "Sacramento",
+    "num_reps": "53",
+    "population": "39,512,223",
+    "ratified": "Sep 9, 1850"
+  },
+  {
+    "name": "Colorado",
+    "abv": "CO",
+    "capital": "Denver",
+    "num_reps": "7",
+    "population": "5,758,736",
+    "ratified": "Aug 1, 1876"
+  },
+  {
+    "name": "Connecticut",
+    "abv": "CT",
+    "capital": "Hartford",
+    "num_reps": "5",
+    "population": "3,565,278",
+    "ratified": "Jan 9, 1788"
+  },
+  {
+    "name": "Delaware",
+    "abv": "DE",
+    "capital": "Dover",
+    "num_reps": "1",
+    "population": "973,764",
+    "ratified": "Dec 7, 1787"
+  },
+  {
+    "name": "Florida",
+    "abv": "FL",
+    "capital": "Tallahassee",
+    "num_reps": "27",
+    "population": "21,477,737",
+    "ratified": "Mar 3, 1845"
+  },
+  {
+    "name": "Georgia",
+    "abv": "GA",
+    "capital": "Atlanta",
+    "num_reps": "14",
+    "population": "10,617,423",
+    "ratified": "Jan 2, 1788"
+  },
+  {
+    "name": "Hawaii",
+    "abv": "HI",
+    "capital": "Honolulu",
+    "num_reps": "2",
+    "population": "1,415,872",
+    "ratified": "Aug 21, 1959"
+  },
+  {
+    "name": "Idaho",
+    "abv": "ID",
+    "capital": "Boise",
+    "num_reps": "2",
+    "population": "1,787,065",
+    "ratified": "Jul 3, 1890"
+  },
+  {
+    "name": "Illinois",
+    "abv": "IL",
+    "capital": "Springfield",
+    "num_reps": "18",
+    "population": "12,671,821",
+    "ratified": "Dec 3, 1818"
+  },
+  {
+    "name": "Indiana",
+    "abv": "IN",
+    "capital": "Indianapolis",
+    "num_reps": "9",
+    "population": "6,732,219",
+    "ratified": "Dec 11, 1816"
+  },
+  {
+    "name": "Iowa",
+    "abv": "IA",
+    "capital": "Des Moines",
+    "num_reps": "4",
+    "population": "3,155,070",
+    "ratified": "Dec 28, 1846"
+  },
+  {
+    "name": "Kansas",
+    "abv": "KS",
+    "capital": "Topeka",
+    "num_reps": "4",
+    "population": "2,913,314",
+    "ratified": "Jan 29, 1861"
+  },
+  {
+    "name": "Kentucky",
+    "abv": "KY",
+    "capital": "Frankfort",
+    "num_reps": "6",
+    "population": "4,467,673",
+    "ratified": "Jun 1, 1792"
+  },
+  {
+    "name": "Louisiana",
+    "abv": "LA",
+    "capital": "Baton Rouge",
+    "num_reps": "6",
+    "population": "4,648,794",
+    "ratified": "Apr 30, 1812"
+  },
+  {
+    "name": "Maine",
+    "abv": "ME",
+    "capital": "Augusta",
+    "num_reps": "2",
+    "population": "1,344,212",
+    "ratified": "Mar 15, 1820"
+  },
+  {
+    "name": "Maryland",
+    "abv": "MD",
+    "capital": "Annapolis",
+    "num_reps": "8",
+    "population": "6,045,680",
+    "ratified": "Apr 28, 1788"
+  },
+  {
+    "name": "Massachusetts",
+    "abv": "MA",
+    "capital": "Boston",
+    "num_reps": "9",
+    "population": "6,892,503",
+    "ratified": "Feb 6, 1788"
+  },
+  {
+    "name": "Michigan",
+    "abv": "MI",
+    "capital": "Lansing",
+    "num_reps": "14",
+    "population": "9,986,857",
+    "ratified": "Jan 26, 1837"
+  },
+  {
+    "name": "Minnesota",
+    "abv": "MN",
+    "capital": "St. Paul",
+    "num_reps": "8",
+    "population": "5,639,632",
+    "ratified": "May 11, 1858"
+  },
+  {
+    "name": "Mississippi",
+    "abv": "MS",
+    "capital": "Jackson",
+    "num_reps": "4",
+    "population": "2,976,149",
+    "ratified": "Dec 10, 1817"
+  },
+  {
+    "name": "Missouri",
+    "abv": "MO",
+    "capital": "Jefferson City",
+    "num_reps": "8",
+    "population": "6,137,428",
+    "ratified": "Aug 10, 1821"
+  },
+  {
+    "name": "Montana",
+    "abv": "MT",
+    "capital": "Helena",
+    "num_reps": "1",
+    "population": "1,068,778",
+    "ratified": "Nov 8, 1889"
+  },
+  {
+    "name": "Nebraska",
+    "abv": "NE",
+    "capital": "Lincoln",
+    "num_reps": "3",
+    "population": "1,934,408",
+    "ratified": "Mar 1, 1867"
+  },
+  {
+    "name": "Nevada",
+    "abv": "NV",
+    "capital": "Carson City",
+    "num_reps": "4",
+    "population": "3,080,156",
+    "ratified": "Oct 31, 1864"
+  },
+  {
+    "name": "New Hampshire",
+    "abv": "NH",
+    "capital": "Concord",
+    "num_reps": "2",
+    "population": "1,359,711",
+    "ratified": "Jun 21, 1788"
+  },
+  {
+    "name": "New Jersey",
+    "abv": "NJ",
+    "capital": "Trenton",
+    "num_reps": "12",
+    "population": "8,882,190",
+    "ratified": "Dec 18, 1787"
+  },
+  {
+    "name": "New Mexico",
+    "abv": "NM",
+    "capital": "Santa Fe",
+    "num_reps": "3",
+    "population": "2,096,829",
+    "ratified": "Jan 6, 1912"
+  },
+  {
+    "name": "New York",
+    "abv": "NY",
+    "capital": "Albany",
+    "num_reps": "27",
+    "population": "19,453,561",
+    "ratified": "Jul 26, 1788"
+  },
+  {
+    "name": "North Carolina",
+    "abv": "NC",
+    "capital": "Raleigh",
+    "num_reps": "13",
+    "population": "10,488,084",
+    "ratified": "Nov 21, 1789"
+  },
+  {
+    "name": "North Dakota",
+    "abv": "ND",
+    "capital": "Bismarck",
+    "num_reps": "1",
+    "population": "762,062",
+    "ratified": "Nov 2, 1889"
+  },
+  {
+    "name": "Ohio",
+    "abv": "OH",
+    "capital": "Columbus",
+    "num_reps": "16",
+    "population": "11,689,100",
+    "ratified": "Mar 1, 1803"
+  },
+  {
+    "name": "Oklahoma",
+    "abv": "OK",
+    "capital": "Oklahoma City",
+    "num_reps": "5",
+    "population": "3,956,971",
+    "ratified": "Nov 16, 1907"
+  },
+  {
+    "name": "Oregon",
+    "abv": "OR",
+    "capital": "Salem",
+    "num_reps": "5",
+    "population": "4,217,737",
+    "ratified": "Feb 14, 1859"
+  },
+  {
+    "name": "Pennsylvania",
+    "abv": "PA",
+    "capital": "Harrisburg",
+    "num_reps": "18",
+    "population": "12,801,989",
+    "ratified": "Dec 12, 1787"
+  },
+  {
+    "name": "Rhode Island",
+    "abv": "RI",
+    "capital": "Providence",
+    "num_reps": "2",
+    "population": "1,059,361",
+    "ratified": "May 29, 1790"
+  },
+  {
+    "name": "South Carolina",
+    "abv": "SC",
+    "capital": "Columbia",
+    "num_reps": "7",
+    "population": "5,148,714",
+    "ratified": "May 23, 1788"
+  },
+  {
+    "name": "South Dakota",
+    "abv": "SD",
+    "capital": "Pierre",
+    "num_reps": "1",
+    "population": "884,659",
+    "ratified": "Nov 2, 1889"
+  },
+  {
+    "name": "Tennessee",
+    "abv": "TN",
+    "capital": "Nashville",
+    "num_reps": "9",
+    "population": "6,829,174",
+    "ratified": "Jun 1, 1796"
+  },
+  {
+    "name": "Texas",
+    "abv": "TX",
+    "capital": "Austin",
+    "num_reps": "36",
+    "population": "28,995,881",
+    "ratified": "Dec 29, 1845"
+  },
+  {
+    "name": "Utah",
+    "abv": "UT",
+    "capital": "Salt Lake City",
+    "num_reps": "4",
+    "population": "3,205,958",
+    "ratified": "Jan 4, 1896"
+  },
+  {
+    "name": "Vermont",
+    "abv": "VT",
+    "capital": "Montpelier",
+    "num_reps": "1",
+    "population": "623,989",
+    "ratified": "Mar 4, 1791"
+  },
+  {
+    "name": "Virginia",
+    "abv": "VA",
+    "capital": "Richmond",
+    "num_reps": "11",
+    "population": "8,535,519",
+    "ratified": "Jun 25, 1788"
+  },
+  {
+    "name": "Washington",
+    "abv": "WA",
+    "capital": "Olympia",
+    "num_reps": "10",
+    "population": "7,614,893",
+    "ratified": "Nov 11, 1889"
+  },
+  {
+    "name": "West Virginia",
+    "abv": "WV",
+    "capital": "Charleston",
+    "num_reps": "3",
+    "population": "1,792,147",
+    "ratified": "Jun 20, 1863"
+  },
+  {
+    "name": "Wisconsin",
+    "abv": "WI",
+    "capital": "Madison",
+    "num_reps": "8",
+    "population": "5,822,434",
+    "ratified": "May 29, 1848"
+  },
+  {
+    "name": "Wyoming",
+    "abv": "WY",
+    "capital": "Cheyenne",
+    "num_reps": "1",
+    "population": "578,759",
+    "ratified": "Jul 10, 1890"
+  }
+]
