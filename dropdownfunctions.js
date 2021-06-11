@@ -1,5 +1,5 @@
 function addStateDropdown(statesJson) {
-    console.log(statesJson.body);
+    // console.log(statesJson.body);
     for (const i of statesJson) {
         const li = document.createElement("li");
         li.className = "state-list";
@@ -17,14 +17,13 @@ function addNatMon(natMonLi) {
     }
 }
 
-//This code displays the dropdown when you click on the menu headers
 for (const e of h2) {
     e.addEventListener("click", dropDown);
 }
 
 function dropDown(e) {
-    console.log("dropDown function");
-    console.log(e);
+    // console.log("dropDown function");
+    // console.log(e);
     const ulId = document.getElementById((e.target.textContent).replace(" ", ""));
     if (ulId.className === "dropDown") {
         ulId.classList.remove("dropDown");

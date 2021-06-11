@@ -34,7 +34,7 @@ body {
     top: 10px;
     left: 20px;
     position: relative;
-     font-weight: lighter;
+    font-weight: lighter;
     font-size: 30px; 
     border-bottom: double white 5px;
     text-shadow: 0px 3px 8px black;
@@ -91,7 +91,7 @@ body {
 
 #state-teaser p {
     letter-spacing: .2rem;
-    width: 450px;
+    width: 650px;
     word-spacing: normal;
     top: 140px;
     line-height: 45px;
@@ -105,3 +105,18 @@ body {
     color: rgb(178, 34, 52);
 }
 
+.fade {
+    -webkit-animation: fade 1.5s 5s infinite;
+    animation: fadeIn 1s 4s infinite;
+    animation-timing-function: ease-in;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
