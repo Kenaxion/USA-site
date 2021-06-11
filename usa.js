@@ -7,6 +7,8 @@ const flag = document.getElementById("state-flag");
 const abv = document.getElementById("abv");
 const pop = document.getElementById("pop");
 const ratif = document.getElementById("ratif");
+const links = document.getElementsByClassName("links");
+const dropdown = document.getElementsByClassName("dropdown");
 const natMon =
    ["Statue of Liberty",
    "Independence Hall",
