@@ -11,7 +11,7 @@ nav:hover{
     background: rgb(178, 34, 52);
     transition: .3s;
 }
-nav:hover a {
+nav:hover h2 {
     color: white;
 }
 
