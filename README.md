@@ -8,4 +8,4 @@ That means, no politics, no opinions, no religion, just the United States of Ame
 
 The site utilizes HTML for the basic framework, CSS for hover effects, fade in & outs, dropdown menus, and several other design assets, JavaScript for the slightly more indepth animation aspects and using JSON for the state database. 
 
-![american-flag](https://user-images.githubusercontent.com/67118137/121580194-75c84c00-c9fa-11eb-849f-62e834554ffc.png)
+![Screenshot (107)](https://user-images.githubusercontent.com/67118137/121821636-3b63e680-cc68-11eb-8607-f7640f532841.png)
