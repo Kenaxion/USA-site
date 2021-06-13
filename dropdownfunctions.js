@@ -32,6 +32,18 @@ function dropDown(e) {
     }
 }
 
-const dropDownMenu = (e) => {
-    
+for (const i of h2) {
+    i.addEventListener("click", presidentDropDown);
 }
+
+function presidentDropDown(i) {
+    const ulId = document.getElementById("pres");
+    if (ulId.className === "dropDown") {
+        ulId.classList.remove("dopDown");
+    } else {
+        ulId.className = "dropdown";
+    }
+    }
+// const dropDownMenu = (e) => {
+    
+// }
