@@ -24,6 +24,8 @@ for (const e of h2) {
 function dropDown(e) {
     // console.log("dropDown function");
     // console.log(e);
+    //Find the element's text content and use it to display the right dropdown
+    //The dropdown's id is the same as the text content without spaces
     const ulId = document.getElementById((e.target.textContent).replace(" ", ""));
     if (ulId.className === "dropDown") {
         ulId.classList.remove("dropDown");
@@ -31,19 +33,3 @@ function dropDown(e) {
         ulId.className = "dropDown";
     }
 }
-
-for (const i of h2) {
-    i.addEventListener("click", presidentDropDown);
-}
-
-function presidentDropDown(i) {
-    const ulId = document.getElementById("pres");
-    if (ulId.className === "dropDown") {
-        ulId.classList.remove("dopDown");
-    } else {
-        ulId.className = "dropdown";
-    }
-    }
-// const dropDownMenu = (e) => {
-    
-// }

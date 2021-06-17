@@ -20,7 +20,7 @@ body {
     background: #0a2458;
 }
 
-#wrapper > ul {
+header > ul {
     margin: auto;
     position: relative;
     color: white;
@@ -28,7 +28,7 @@ body {
     padding-top: 5px;
 }
 
-#wrapper ul #title1 {
+header ul #title1 {
     letter-spacing: .5rem;
     width: 620px;
     top: 10px;
@@ -40,7 +40,7 @@ body {
     text-shadow: 0px 3px 8px black;
 }
 
-#wrapper ul #title2 {
+header ul #title2 {
     /* display: flex; */
     text-align: right;
     letter-spacing: .5rem;
