@@ -59,7 +59,7 @@ header ul #title2 {
     background-color: rgb(255, 239, 209);
     height: 500px;
     top: 170px;
-    width: 100%;
+    width: 1300px;
     box-sizing: content-box;
     flex-wrap: wrap;
     position: relative;
@@ -70,7 +70,7 @@ header ul #title2 {
     position: absolute;
     font-family: "Mercury Display Semibold";
     padding-top: 130px;
-    padding-left: 200px;
+    padding-left: 50px;
 }
 
 #state-teaser h1  {
@@ -91,12 +91,12 @@ header ul #title2 {
 
 #state-teaser p {
     letter-spacing: .2rem;
-    width: 650px;
+    width: 480px;
     word-spacing: normal;
     top: 140px;
     line-height: 45px;
     font-size: 25px;
-    left: 650px;
+    margin-left: 505px;
     text-align: left;
     position: absolute;
 }
@@ -120,3 +120,10 @@ header ul #title2 {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+#presWrapper {
+    border-top: black solid;
+    margin-top: 190px;
+    margin-left: 12%;
+    width: 75%;
+}

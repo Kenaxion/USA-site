@@ -29,6 +29,8 @@ function dropDown(e) {
     const ulId = document.getElementById((e.target.textContent).replace(" ", ""));
     if (ulId.className === "dropDown") {
         ulId.classList.remove("dropDown");
+    // } else if (ulId.className !== "dropDown") {
+    //     ulId.classList.remove("dropDown");
     } else {
         ulId.className = "dropDown";
     }
