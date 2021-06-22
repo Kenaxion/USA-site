@@ -57,9 +57,9 @@ header ul #title2 {
 
 #wrapper2 {
     background-color: rgb(255, 239, 209);
-    height: 500px;
+    height: 380px;
     top: 170px;
-    width: 1300px;
+    width: 53%;
     box-sizing: content-box;
     flex-wrap: wrap;
     position: relative;
@@ -69,40 +69,43 @@ header ul #title2 {
     float: left;
     position: absolute;
     font-family: "Mercury Display Semibold";
-    padding-top: 130px;
-    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 #state-teaser h1  {
     font-size: 55px;
-    letter-spacing: .4rem;
-    position: absolute;
+    letter-spacing: .2rem;
+    /* position: absolute; */
     width: 550px;
-    bottom: .5px;
-    font-weight: bolder;
+    /* margin-top: 3px; */
+    /* bottom: .5px; */
     color: #0a2458;
 }
 
 #state-teaser img {
     position: absolute;
-    float: left;
-    width: 400px;
+    max-width: 450px;
+    max-height: 240px;
 }
 
 #state-teaser p {
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     width: 480px;
-    word-spacing: normal;
-    top: 140px;
+    /* top: 0px; */
     line-height: 45px;
-    font-size: 25px;
-    margin-left: 505px;
+    font-size: 27px;
+    margin-left: 465px;
     text-align: left;
     position: absolute;
 }
 
 #state-teaser .redwords {
     color: rgb(178, 34, 52);
+}
+
+.apidata {
+    color: #0a2458;
 }
 
 .fade {
@@ -121,9 +124,61 @@ header ul #title2 {
     to {opacity: 1}
   }
 
-#presWrapper {
+/* #presWrapper {
     border-top: black solid;
     margin-top: 190px;
     margin-left: 12%;
     width: 75%;
+} */
+
+#presWrapper {
+    float: right;
+    background-color: rgb(255, 239, 209);
+    height: 380px;
+    top: 200px;
+    width: 53%;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#presWrapper2  {
+    /* float: right; */
+    position: absolute;
+    font-family: "Mercury Display Semibold"; 
+    margin-left: 30px; 
+}
+
+#presWrapper2 h1 {
+    font-size: 55px;
+    letter-spacing: .2rem;
+    /* position: absolute; */
+    width: 750px;
+    margin-top: 8px;
+    /* margin-left: 20px; */
+    /* bottom: .5px; */
+    color: #0a2458;
+}
+
+#presWrapper2 img {
+    position: absolute;
+    /* margin-top: 72px; */
+    /* margin-left: 20px; */
+    max-width: 215px;
+    max-height: 280px;
+}
+
+#presWrapper2 p {
+    letter-spacing: .1rem;
+    width: 600px;
+    margin-top: 45px;
+    line-height: 45px;
+    font-size: 27px;
+    margin-left: 265px;
+    text-align: left;
+    position: absolute;
+}
+
+#presWrapper2 .redwords {
+    color: rgb(178, 34, 52);
 }
