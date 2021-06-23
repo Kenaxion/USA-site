@@ -1,8 +1,6 @@
 nav {
     position: absolute;
     width: 100%;
-    color: (178, 34, 52);
-    /* background: white; */
     top: 110px;
     height: 35px;
 }
@@ -19,39 +17,65 @@ nav > ul {
     position: relative;
     height: 35px;
     display: flex;
+    justify-content: center;
     width: 1170px;
     margin: 0 auto;
-    /* text-align: center; */
+    text-align: center;
     list-style: none;
 }
 
 nav a{
     text-decoration: none;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* text-align: center; */
     color: rgb(178, 34, 52);
     font-size: 15px;
-    /* font-weight: 600; */
 }
 
 nav li h2 {
-    position: relative;
-    top: -17.5px;
+    /* position: relative; */
+    /* top: -17.5px; */
     letter-spacing: .4rem;
-    display: flex;
-    margin: 23px 29.4px;
+    /* display: flex; */
+    margin: 4px 29.4px;
     /* padding: 22px 29.4px; */
     font-weight: lighter;
-    /* width: 350px; */
 }
 
 /* navbar hover effect */
 nav > ul > li:hover {
-    /* box-shadow: 0px 9px 9px -2px black; */
     display: flex;
     width: auto;
     background-color: #0a2458;
     transition: .3s;
+}
+
+nav li ul li {
+    cursor: pointer;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 22px;
+    letter-spacing: .2rem;
+    color: white;
+}
+
+.dropDown {
+    background: #0a2458;
+    border-top: 5px solid #0a2458;
+    box-shadow: 0px 5px 4px 0px black;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 35px;
+    left: 0;
+}   
+
+/* drop down height */
+nav ul li ul {
+    display: none;
+    justify-content: center;
 }
 
 nav li #States li:hover {
@@ -73,13 +97,12 @@ nav #col ul li a:hover {
 }
 
 nav #NationalMonuments li {
-    line-height: 28px;
+    line-height: 22px;
     width: 18%;
     justify-content: space-evenly;
     /* margin: auto; */
     margin-top: 5px;
     margin-bottom: 7px;
-    font-size: 15px;
 }
 
 nav #NationalMonuments li:hover{
@@ -88,15 +111,11 @@ nav #NationalMonuments li:hover{
 }
 
 nav #Presidents li  {
-    line-height: 28px;
-    width: 19%;
-    /* padding: 0px 25px 0px 25px; */
-    justify-content: space-evenly;
-    /* height: 50%; */
-    /* margin: auto; */
+    line-height: 22px;
+    width: 25%;
+    justify-content: space-around;
     margin-top: 5px;
     margin-bottom: 7px;
-    font-size: 15px;
 }
 
 nav #Presidents li a {
@@ -106,36 +125,4 @@ nav #Presidents li a {
 nav #Presidents li:hover{
     transition: all .2s ease-in-out;
     transform: scale(1.1);
-}
-
-/* drop down height */
-nav ul li ul {
-    display: none;
-    justify-content: center;
-}
-
-.dropDown {
-    background: #0a2458;
-    text-align: center;
-    border-top: 5px solid #0a2458;
-    box-shadow: 0px 5px 4px 0px black;
-    z-index: 1;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    top: 35px;
-    left: 0;
-}   
-
-nav li ul li {
-    cursor: pointer;
-    width: 20%;
-    display: flex;
-    position: relative;
-    /* padding: auto 15px; */
-    justify-content: space-around;
-    /* text-align: center; */
-    line-height: 35px;
-    letter-spacing: .2rem;
-    color: white;
 }

@@ -1,9 +1,11 @@
 const h2 = document.getElementsByTagName("h2");
+const li = document.getElementsByTagName("li");
 const states = document.getElementById("States");
 const stateHeader = document.getElementById("state-header");
 const cap = document.getElementById("cap");
 const reps = document.getElementById("reps");
 const flag = document.getElementById("state-flag");
+const randSate = document.getElementById("rand-state");
 const abv = document.getElementById("abv");
 const pop = document.getElementById("pop");
 const ratif = document.getElementById("ratif");
@@ -14,6 +16,7 @@ const presTerm = document.getElementById("presTerm");
 const presParty = document.getElementById("presParty");
 const presState = document.getElementById("presState");
 const presPic = document.getElementById("presPic");
+const stateList = document.getElementsByClassName("state-list");
 const natMon =
    ["Statue of Liberty",
    "Independence Hall",
