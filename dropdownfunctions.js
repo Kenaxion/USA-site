@@ -21,6 +21,10 @@ for (const e of h2) {
     e.addEventListener("click", dropDown);
 }
 
+for (const f of zIndex) {
+    f.addEventListener("click", hideDropDown);
+}
+
 function dropDown(e) {
     // console.log("dropDown function");
     // console.log(e);
@@ -35,3 +39,39 @@ function dropDown(e) {
         ulId.className = "dropDown";
     }
 }
+ 
+function hideDropDown(f){
+    const findDropDown = document.getElementsByClassName("dropDown");
+ if (findDropDown[0] != undefined) {
+     findDropDown[0].classList.remove("dropDown");
+ }
+    
+}
+
+
+
+// for (const s of stateList) {
+//     s.addEventListener("click", stateClickDropdown);
+// }
+
+// function stateClickDropdown(s) {
+//     for (const i of s) {
+//         const li = document.createElement("")
+//     }
+//     if (stateList === randSate.abv.textContent) {
+//         randSate.abv.textContent.display = "show";
+//         s.stopPropagation()
+//     }
+// }
+
+// function stateClickDropdown() {
+//     if (stateList === flag) {
+//         flag.style.visibility = "visible";
+//         stopPropagation();
+//     }
+// }
+
+
+
+// console.log(stateClickDropdown)
+

@@ -17,6 +17,7 @@ const presParty = document.getElementById("presParty");
 const presState = document.getElementById("presState");
 const presPic = document.getElementById("presPic");
 const stateList = document.getElementsByClassName("state-list");
+const zIndex = document.getElementsByClassName("zindex");
 const natMon =
    ["Statue of Liberty",
    "Independence Hall",
