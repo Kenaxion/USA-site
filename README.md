@@ -8,4 +8,6 @@ That means, no politics, no opinions, no religion, just the United States of Ame
 
 The site utilizes HTML for the basic framework, CSS for hover effects, fade in & outs, dropdown menus, the state flag changes, and several other design assets, JavaScript for the slightly more indepth animation aspects, and using JSON for the state database. It is also still a work-in-progress. I have plans on adding additional tabs to the navbar such as a list of Presidents and trivia. Make the site more interactive where clicking on a state will show it's info and pause the slideshow on that state, and add many more features. 
 
+Video walkthrough of the site: https://www.youtube.com/watch?v=-v999WVNvps
+
 ![Screenshot (109)](https://user-images.githubusercontent.com/67118137/122949978-18ad8e00-d34a-11eb-9552-70c6afd7f88a.png)
