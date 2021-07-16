@@ -18,69 +18,77 @@ const presState = document.getElementById("presState");
 const presPic = document.getElementById("presPic");
 const stateList = document.getElementsByClassName("state-list");
 const zIndex = document.getElementsByClassName("zindex");
-const natMon =
-   ["Statue of Liberty",
-   "Independence Hall",
-   "Castillo de San Marcos",
-   "Mount Rushmore",
-   "Grand Canyon",
-   "Redwood Forest",
-   "Devil's Tower",
-   "Giant Sequoia National Monument",
-   "World War II Valor in the Pacific",
-   "Little Bighorn Battlefield"];
-const colonies = ["New Hampshire",
-"Massachusetts",
-"Connecticut",
-"Rhode Island",
-"New York",
-"New Jersey",
-"Pennsylvania",
-"Delaware",
-"Maryland",
-"Virginia",
-"North Carolina",
-"South Carolina",
+const natMon = [
+    "Statue of Liberty",
+    "Independence Hall",
+    "Castillo de San Marcos",
+    "Mount Rushmore",
+    "Grand Canyon",
+    "Redwood Forest",
+    "Devil's Tower",
+    "Giant Sequoia National Monument",
+    "World War II Valor in the Pacific",
+    "Little Bighorn Battlefield"
+];
+const colonies = [
+    "New Hampshire",
+    "Massachusetts",
+    "Connecticut",
+    "Rhode Island",
+    "New York",
+    "New Jersey",
+    "Pennsylvania",
+    "Delaware",
+    "Maryland",
+    "Virginia",
+    "North Carolina",
+    "South Carolina"
 ]
-fetch("https://gist.githubusercontent.com/Kenaxion/38448ed83c8dcb23380fc361ed5f554b/raw/5ac1ad99f2121238411d080f125777ca11accbc4/code.json")
-  .then(response => response.json()) //JSON.parse(response)
-  .then(
-    function (data) {
-      addStateDropdown(data);
-      addNatMon(natMon);
-      // addColonies(colonies);
-      getRandomState(data);
-      setInterval(function() {getRandomState(data)}, 5000);
-    }
-  )
+fetch(
+    "https://gist.githubusercontent.com/Kenaxion/38448ed83c8dcb23380fc361ed5f554b/r" +
+    "aw/5ac1ad99f2121238411d080f125777ca11accbc4/code.json"
+)
+    .then(response => response.json()) //JSON.parse(response)
+    .then(function (data) {
+        addStateDropdown(data);
+        addNatMon(natMon);
+        // addColonies(colonies);
+        getRandomState(data);
+        setInterval(function () {
+            getRandomState(data)
+        }, 5000);
+    })
 
-  function getRandomState(statesJson) {
-   let stateIndex = Math.floor(Math.random() * statesJson.length);
-   let randomState = statesJson[stateIndex];
-   stateHeader.textContent = randomState.name;
-   abv.textContent = randomState.abv;
-   cap.textContent = randomState.capital;
-   reps.textContent = randomState.num_reps;
-   flag.src = "flags/" + randomState.abv + ".svg"; 
-   pop.textContent = randomState.population;
-   ratif.textContent = randomState.ratified;
-  //  console.log(stateIndex);
-  //  console.log(randomState);
-  }
+// set interval to stop timeout???
 
-fetch("https://gist.githubusercontent.com/Kenaxion/3689e2a3b1b1e5435ca5d96b27e72a97/raw/c178b59fa65bcca8abb6deefe2f9be6ec6dcb14a/presidentlist.json")
-  .then(response => response.json())
-  .then(
-    function (presidentData) {
-      getRandomPresident(presidentData)
-      setInterval(function() {getRandomPresident(presidentData)}, 5000);
-    }
-  )
+function getRandomState(statesJson) {
+    let stateIndex = Math.floor(Math.random() * statesJson.length);
+    let randomState = statesJson[stateIndex];
+    stateHeader.textContent = randomState.name;
+    abv.textContent = randomState.abv;
+    cap.textContent = randomState.capital;
+    reps.textContent = randomState.num_reps;
+    flag.src = "flags/" + randomState.abv + ".svg";
+    pop.textContent = randomState.population;
+    ratif.textContent = randomState.ratified;
+    //  console.log(stateIndex);  console.log(randomState);
+}
 
-  function getRandomPresident(presJson) {
+fetch(
+    "https://gist.githubusercontent.com/Kenaxion/3689e2a3b1b1e5435ca5d96b27e72a97/r" +
+    "aw/c178b59fa65bcca8abb6deefe2f9be6ec6dcb14a/presidentlist.json"
+)
+    .then(response => response.json())
+    .then(function (presidentData) {
+        getRandomPresident(presidentData)
+        setInterval(function () {
+            getRandomPresident(presidentData)
+        }, 5000);
+    })
+
+function getRandomPresident(presJson) {
     let presIndex = Math.floor(Math.random() * presJson.length);
     let randomPres = presJson[presIndex];
-    // let presContent = presPic.textContent.replace(" ", "");
     presName.textContent = randomPres.president;
     presNum.textContent = randomPres.num;
     presTerm.textContent = randomPres.term;
@@ -90,16 +98,8 @@ fetch("https://gist.githubusercontent.com/Kenaxion/3689e2a3b1b1e5435ca5d96b27e72
     presPic.src = "presidents/" + randomPres.num + ".jpg";
     console.log(presIndex);
     console.log(randomPres);
-   }
+}
 
-  //  ((randomPres.presNum.textContent).replace(" ", ""))
-  // for (const h of flag) {
-  //   h.addEventListener("click", flagShow)
-  // }
-
-  // function flagShow (h) {
-  //   flag.src = "flags/"
-  //   if (states.textContent === )
-  // }
-
-  
+// ((randomPres.presNum.textContent).replace(" ", "")) for (const h of flag) {
+// h.addEventListener("click", flagShow) } function flagShow (h) {   flag.src =
+// "flags/"   if (states.textContent === ) }

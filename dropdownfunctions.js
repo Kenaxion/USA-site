@@ -26,52 +26,35 @@ for (const f of zIndex) {
 }
 
 function dropDown(e) {
-    // console.log("dropDown function");
-    // console.log(e);
-    //Find the element's text content and use it to display the right dropdown
-    //The dropdown's id is the same as the text content without spaces
+    // console.log("dropDown function"); console.log(e); Find the element's text
+    // content and use it to display the right dropdown The dropdown's id is the
+    // same as the text content without spaces
     const ulId = document.getElementById((e.target.textContent).replace(" ", ""));
     if (ulId.className === "dropDown") {
-        ulId.classList.remove("dropDown");
-    // } else if (ulId.className !== "dropDown") {
-    //     ulId.classList.remove("dropDown");
+        ulId
+            .classList
+            .remove("dropDown");
+        // } else if (ulId.className !== "dropDown") {
+        // ulId.classList.remove("dropDown");
     } else {
         ulId.className = "dropDown";
     }
 }
- 
-function hideDropDown(f){
+
+function hideDropDown(f) {
     const findDropDown = document.getElementsByClassName("dropDown");
- if (findDropDown[0] != undefined) {
-     findDropDown[0].classList.remove("dropDown");
- }
-    
+    if (findDropDown[0] != undefined) {
+        findDropDown[0]
+            .classList
+            .remove("dropDown");
+    }
+
 }
 
-
-
-// for (const s of stateList) {
-//     s.addEventListener("click", stateClickDropdown);
-// }
-
-// function stateClickDropdown(s) {
-//     for (const i of s) {
-//         const li = document.createElement("")
-//     }
-//     if (stateList === randSate.abv.textContent) {
-//         randSate.abv.textContent.display = "show";
-//         s.stopPropagation()
-//     }
-// }
-
-// function stateClickDropdown() {
-//     if (stateList === flag) {
-//         flag.style.visibility = "visible";
-//         stopPropagation();
-//     }
-// }
-
-
-
-// console.log(stateClickDropdown)
-
+// for (const s of stateList) {     s.addEventListener("click",
+// stateClickDropdown); } function stateClickDropdown(s) {     for (const i of
+// s) {         const li = document.createElement("")     }     if (stateList
+// === randSate.abv.textContent) {         randSate.abv.textContent.display =
+// "show";         s.stopPropagation()     } } function stateClickDropdown() {
+// if (stateList === flag) {         flag.style.visibility = "visible";
+// stopPropagation();     } } console.log(stateClickDropdown)

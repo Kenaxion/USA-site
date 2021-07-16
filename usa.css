@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,8 @@ html {
 }
 
 body {
-   background-color: white;
+    background-color: white;
+    font-family: "Mercury Display Semibold";
 }
 
 #wrapper {
@@ -29,37 +30,37 @@ header > ul {
 }
 
 header ul #title1 {
-    letter-spacing: .5rem;
-    width: 620px;
+    letter-spacing: 0.5rem;
+    width: 720px;
     top: 10px;
     left: 20px;
     position: relative;
     font-weight: lighter;
-    font-size: 30px; 
+    font-size: 35px;
     border-bottom: double white 5px;
-    text-shadow: 0px 3px 8px black;
+    text-shadow: 0 3px 8px black;
 }
 
 header ul #title2 {
     /* display: flex; */
     text-align: right;
-    letter-spacing: .5rem;
+    letter-spacing: 0.45rem;
     position: relative;
     font-weight: lighter;
-    font-size: 22px; 
-    width: 250px;
-    left: 640px;
+    font-size: 27px;
+    width: 255px;
+    left: 740px;
     top: 5px;
     border-top: double white 5px;
     padding-top: 2px;
-    text-shadow: 0px 3px 8px black;
+    text-shadow: 0 3px 8px black;
 }
 
 #wrapper2 {
     background-color: rgb(255, 239, 209);
     height: 380px;
     top: 170px;
-    width: 53%;
+    width: 70rem;
     box-sizing: content-box;
     flex-wrap: wrap;
     position: relative;
@@ -68,18 +69,14 @@ header ul #title2 {
 #state-teaser {
     float: left;
     position: absolute;
-    font-family: "Mercury Display Semibold";
     margin-top: 20px;
     margin-left: 30px;
 }
 
-#state-teaser h1  {
+#state-teaser > h1 {
     font-size: 55px;
-    letter-spacing: .2rem;
-    /* position: absolute; */
+    letter-spacing: 0.4rem;
     width: 550px;
-    /* margin-top: 3px; */
-    /* bottom: .5px; */
     color: #0a2458;
 }
 
@@ -90,8 +87,8 @@ header ul #title2 {
 }
 
 #state-teaser p {
-    letter-spacing: .1rem;
-    width: 480px;
+    letter-spacing: 0.2rem;
+    width: 580px;
     /* top: 0px; */
     line-height: 45px;
     font-size: 27px;
@@ -108,21 +105,31 @@ header ul #title2 {
     color: #0a2458;
 }
 
-.fade {
+
+
+/* .fade {
     -webkit-animation: fade 1.5s 5s infinite;
     animation: fadeIn 1s 4s infinite;
     animation-timing-function: ease-in;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: 0}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+} */
+
+/* @-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+} */
 
 /* #presWrapper {
     border-top: black solid;
@@ -132,28 +139,30 @@ header ul #title2 {
 } */
 
 #presWrapper {
-    float: right;
+    /* float: right; */
+    /* margin-left: auto;
+    margin-right: 2; */
     background-color: rgb(255, 239, 209);
     height: 380px;
-    top: 200px;
-    width: 53%;
+    top: 700px;
+    width: 70rem;
     box-sizing: content-box;
     flex-wrap: wrap;
     position: relative;
 }
 
-#presWrapper2  {
+#presWrapper2 {
     /* float: right; */
     position: absolute;
-    font-family: "Mercury Display Semibold"; 
-    margin-left: 30px; 
+    font-family: "Mercury Display Semibold";
+    margin-left: 30px;
 }
 
 #presWrapper2 h1 {
     font-size: 55px;
-    letter-spacing: .2rem;
+    letter-spacing: 0.4rem;
     /* position: absolute; */
-    width: 750px;
+    width: 850px;
     margin-top: 8px;
     /* margin-left: 20px; */
     /* bottom: .5px; */
@@ -169,8 +178,8 @@ header ul #title2 {
 }
 
 #presWrapper2 p {
-    letter-spacing: .1rem;
-    width: 600px;
+    letter-spacing: 0.2rem;
+    width: 750px;
     margin-top: 45px;
     line-height: 45px;
     font-size: 27px;
