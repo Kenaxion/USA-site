@@ -1,10 +1,27 @@
 function addStateDropdown(statesJson) {
-    // console.log(statesJson.body);
     for (const i of statesJson) {
         const li = document.createElement("li");
         li.className = "state-list";
         li.textContent = i.name;
         states.append(li);
+    }
+}
+
+function addColonyDropdown(colonyJson) {
+    for (const i of colonyJson) {
+        const li = document.createElement("li");
+        li.className = "colony-list";
+        li.textContent = i.name;
+        colonies.append(li);
+    }
+}
+
+function addPresidentDropdown(presJson) {
+    for (const i of presJson) {
+        const li = document.createElement("li");
+        li.className = "pres-list";
+        li.textContent = i.president;
+        presidents.append(li);
     }
 }
 

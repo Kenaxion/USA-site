@@ -9,14 +9,23 @@ const randSate = document.getElementById("rand-state");
 const abv = document.getElementById("abv");
 const pop = document.getElementById("pop");
 const ratif = document.getElementById("ratif");
-const presList = document.getElementById("Presidents");
+const presidents = document.getElementById("Presidents");
 const presName = document.getElementById("presName");
 const presNum = document.getElementById("presNum");
 const presTerm = document.getElementById("presTerm");
 const presParty = document.getElementById("presParty");
 const presState = document.getElementById("presState");
 const presPic = document.getElementById("presPic");
+const colonies = document.getElementById("13Colonies");
+const colName = document.getElementById("colName");
+const colEst = document.getElementById("colEst");
+const colCap = document.getElementById("colCap");
+const colFirstPop = document.getElementById("colFirstPop");
+const colLastPop = document.getElementById("colLastPop");
+const colPic = document.getElementById("presPic");
+const colonyList = document.getElementsByClassName("colony-list");
 const stateList = document.getElementsByClassName("state-list");
+const presList = document.getElementsByClassName("pres-list");
 const zIndex = document.getElementsByClassName("zindex");
 const natMon = [
     "Statue of Liberty",
@@ -30,20 +39,20 @@ const natMon = [
     "World War II Valor in the Pacific",
     "Little Bighorn Battlefield"
 ];
-const colonies = [
-    "New Hampshire",
-    "Massachusetts",
-    "Connecticut",
-    "Rhode Island",
-    "New York",
-    "New Jersey",
-    "Pennsylvania",
-    "Delaware",
-    "Maryland",
-    "Virginia",
-    "North Carolina",
-    "South Carolina"
-]
+// const colonies = [
+//     "New Hampshire",
+//     "Massachusetts",
+//     "Connecticut",
+//     "Rhode Island",
+//     "New York",
+//     "New Jersey",
+//     "Pennsylvania",
+//     "Delaware",
+//     "Maryland",
+//     "Virginia",
+//     "North Carolina",
+//     "South Carolina"
+// ]
 fetch(
     "https://gist.githubusercontent.com/Kenaxion/38448ed83c8dcb23380fc361ed5f554b/r" +
     "aw/5ac1ad99f2121238411d080f125777ca11accbc4/code.json"
@@ -51,11 +60,10 @@ fetch(
     .then(response => response.json()) //JSON.parse(response)
     .then(function (data) {
         addStateDropdown(data);
-        addNatMon(natMon);
-        // addColonies(colonies);
+        // addNatMon(natMon);
         getRandomState(data);
         setInterval(function () {
-            getRandomState(data)
+            getRandomState(data);
         }, 5000);
     })
 
@@ -81,10 +89,11 @@ fetch(
     "aw/c178b59fa65bcca8abb6deefe2f9be6ec6dcb14a/presidentlist.json"
 )
     .then(response => response.json())
-    .then(function (presidentData) {
-        getRandomPresident(presidentData)
+    .then(function (data) {
+        addPresidentDropdown(data);
+        getRandomPresident(data);
         setInterval(function () {
-            getRandomPresident(presidentData)
+            getRandomPresident(data);
         }, 5000);
     })
 
@@ -108,26 +117,27 @@ function getRandomPresident(presJson) {
 
 
 fetch(
-    "https://gist.githubusercontent.com/Kenaxion/ce6f1af7110dbec3c59518cf441ee786/raw/dd28740d34dcc8b4addbf3a46823669bc2bfa8c3/colonies.json"
+    "https://gist.githubusercontent.com/Kenaxion/ce6f1af7110dbec3c59518cf441ee786/raw/d5914ee6bb6129fb26fe0dd7d9f71f149d4324f8/colonies.json"
 )
     .then(response => response.json())
-    .then(function (presidentData) {
-        getRandomPresident(presidentData)
+    .then(function (data) {
+        addColonyDropdown(data);
+        getRandomColony(data);
         setInterval(function () {
-            getRandomPresident(presidentData)
+            getRandomColony(data);
         }, 5000);
     })
 
-function getRandomPresident(presJson) {
-    let presIndex = Math.floor(Math.random() * presJson.length);
-    let randomPres = presJson[presIndex];
-    presName.textContent = randomPres.president;
-    presNum.textContent = randomPres.num;
-    presTerm.textContent = randomPres.term;
-    presParty.textContent = randomPres.party;
-    presState.textContent = randomPres.birth_state;
-    presPic.textContent = randomPres.num;
-    presPic.src = "presidents/" + randomPres.num + ".jpg";
-    console.log(presIndex);
-    console.log(randomPres);
+function getRandomColony(colonyJson) {
+    let colIndex = Math.floor(Math.random() * colonyJson.length);
+    let randomColonies = colonyJson[colIndex];
+    colName.textContent = randomColonies.name;
+    colEst.textContent = randomColonies.est;
+    colCap.textContent = randomColonies.capital;
+    colFirstPop.textContent = randomColonies.first_pop;
+    colLastPop.textContent = randomColonies.last_pop;
+    colPic.textContent = randomColonies.name;
+    colPic.src = "colonies/" + randomColonies.name + ".png";
+    console.log(colIndex);
+    console.log(randomColonies);
 }
