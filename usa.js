@@ -74,6 +74,8 @@ function getRandomState(statesJson) {
     //  console.log(stateIndex);  console.log(randomState);
 }
 
+
+
 fetch(
     "https://gist.githubusercontent.com/Kenaxion/3689e2a3b1b1e5435ca5d96b27e72a97/r" +
     "aw/c178b59fa65bcca8abb6deefe2f9be6ec6dcb14a/presidentlist.json"
@@ -103,3 +105,29 @@ function getRandomPresident(presJson) {
 // ((randomPres.presNum.textContent).replace(" ", "")) for (const h of flag) {
 // h.addEventListener("click", flagShow) } function flagShow (h) {   flag.src =
 // "flags/"   if (states.textContent === ) }
+
+
+fetch(
+    "https://gist.githubusercontent.com/Kenaxion/ce6f1af7110dbec3c59518cf441ee786/raw/dd28740d34dcc8b4addbf3a46823669bc2bfa8c3/colonies.json"
+)
+    .then(response => response.json())
+    .then(function (presidentData) {
+        getRandomPresident(presidentData)
+        setInterval(function () {
+            getRandomPresident(presidentData)
+        }, 5000);
+    })
+
+function getRandomPresident(presJson) {
+    let presIndex = Math.floor(Math.random() * presJson.length);
+    let randomPres = presJson[presIndex];
+    presName.textContent = randomPres.president;
+    presNum.textContent = randomPres.num;
+    presTerm.textContent = randomPres.term;
+    presParty.textContent = randomPres.party;
+    presState.textContent = randomPres.birth_state;
+    presPic.textContent = randomPres.num;
+    presPic.src = "presidents/" + randomPres.num + ".jpg";
+    console.log(presIndex);
+    console.log(randomPres);
+}
