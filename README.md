@@ -10,4 +10,4 @@ The site utilizes HTML for the basic framework, CSS for hover effects, fade in &
 
 Video walkthrough of the site: https://www.youtube.com/watch?v=-v999WVNvps
 
-![Screenshot (109)](https://user-images.githubusercontent.com/67118137/122949978-18ad8e00-d34a-11eb-9552-70c6afd7f88a.png)
+![Screenshot (116)](https://user-images.githubusercontent.com/67118137/126790368-c360c03b-ebb0-4562-a324-74af5dec3cd8.png)
