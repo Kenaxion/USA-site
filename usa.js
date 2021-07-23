@@ -17,12 +17,12 @@ const presParty = document.getElementById("presParty");
 const presState = document.getElementById("presState");
 const presPic = document.getElementById("presPic");
 const colonies = document.getElementById("13Colonies");
-const colName = document.getElementById("colName");
+const colName = document.getElementById("colonyName");
 const colEst = document.getElementById("colEst");
 const colCap = document.getElementById("colCap");
 const colFirstPop = document.getElementById("colFirstPop");
 const colLastPop = document.getElementById("colLastPop");
-const colPic = document.getElementById("presPic");
+const colPic = document.getElementById("colPic");
 const colonyList = document.getElementsByClassName("colony-list");
 const stateList = document.getElementsByClassName("state-list");
 const presList = document.getElementsByClassName("pres-list");
@@ -39,20 +39,6 @@ const natMon = [
     "World War II Valor in the Pacific",
     "Little Bighorn Battlefield"
 ];
-// const colonies = [
-//     "New Hampshire",
-//     "Massachusetts",
-//     "Connecticut",
-//     "Rhode Island",
-//     "New York",
-//     "New Jersey",
-//     "Pennsylvania",
-//     "Delaware",
-//     "Maryland",
-//     "Virginia",
-//     "North Carolina",
-//     "South Carolina"
-// ]
 fetch(
     "https://gist.githubusercontent.com/Kenaxion/38448ed83c8dcb23380fc361ed5f554b/r" +
     "aw/5ac1ad99f2121238411d080f125777ca11accbc4/code.json"

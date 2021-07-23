@@ -74,8 +74,8 @@ header ul #title2 {
 }
 
 #state-teaser > h1 {
-    font-size: 55px;
-    letter-spacing: 0.4rem;
+    font-size: 2.6rem;
+    letter-spacing: .019rem;
     width: 550px;
     color: #0a2458;
 }
@@ -91,7 +91,7 @@ header ul #title2 {
     width: 580px;
     /* top: 0px; */
     line-height: 45px;
-    font-size: 27px;
+    font-size: 1.8rem;
     margin-left: 465px;
     text-align: left;
     position: absolute;
@@ -105,6 +105,111 @@ header ul #title2 {
     color: #0a2458;
 }
 
+#coloniesWrapper {
+    float: right;
+    margin-left: auto;
+    /* margin-right: 0; */
+    background-color: rgb(255, 239, 209);
+    height: 380px;
+    top: 200px;
+    width: 70rem;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#coloniesWrapper2 {
+    font-family: "Mercury Display Semibold";
+    padding-left: 30px;
+}
+
+#coloniesWrapper2 #colonyName {
+    text-align: left;
+    font-size: 2.6rem;
+    letter-spacing: .019rem;
+    color: #0a2458;
+    width: 68rem;
+    margin-top: 1rem;
+    position: absolute;
+}
+
+#coloniesWrapper2 #colPic {
+    position: absolute;
+    /* margin: auto; */
+    /* margin-top: 4em; */
+    /* align-items: center; */
+    /* display: block; */
+    margin-top: 5.5em;
+    margin-bottom: 10em;
+    vertical-align: center;
+    width: auto;
+    min-height: 210px;
+    max-height: 210px;
+}
+
+#coloniesWrapper2 #rand-colony {
+    letter-spacing: 0.1rem;
+    margin-top: 5rem;
+    line-height: 45px;
+    font-size: 1.8rem;
+    margin-left: 27rem;
+    text-align: left;
+    position: absolute;
+}
+
+#rand-colony .redwords {
+    color: rgb(178, 34, 52);
+}
+
+#presWrapper {
+    background-color: rgb(255, 239, 209);
+    height: 380px;
+    top: 610px;
+    width: 70rem;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#presWrapper2 {
+    position: absolute;
+    font-family: "Mercury Display Semibold";
+    margin-left: 30px;
+}
+
+#presWrapper2 h1 {
+    font-size: 2.6rem;
+    letter-spacing: .019rem;
+    /* position: absolute; */
+    width: 850px;
+    margin-top: 8px;
+    /* margin-left: 20px; */
+    /* bottom: .5px; */
+    color: #0a2458;
+}
+
+#presWrapper2 img {
+    position: absolute;
+    /* margin-top: 72px; */
+    /* margin-left: 20px; */
+    max-width: 215px;
+    max-height: 280px;
+}
+
+#presWrapper2 p {
+    letter-spacing: 0.2rem;
+    width: 750px;
+    margin-top: 45px;
+    line-height: 45px;
+    font-size: 1.8rem;
+    margin-left: 265px;
+    text-align: left;
+    position: absolute;
+}
+
+#presWrapper2 .redwords {
+    color: rgb(178, 34, 52);
+}
 
 
 /* .fade {
@@ -137,57 +242,3 @@ header ul #title2 {
     margin-left: 12%;
     width: 75%;
 } */
-
-#presWrapper {
-    /* float: right; */
-    /* margin-left: auto;
-    margin-right: 2; */
-    background-color: rgb(255, 239, 209);
-    height: 380px;
-    top: 700px;
-    width: 70rem;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-#presWrapper2 {
-    /* float: right; */
-    position: absolute;
-    font-family: "Mercury Display Semibold";
-    margin-left: 30px;
-}
-
-#presWrapper2 h1 {
-    font-size: 55px;
-    letter-spacing: 0.4rem;
-    /* position: absolute; */
-    width: 850px;
-    margin-top: 8px;
-    /* margin-left: 20px; */
-    /* bottom: .5px; */
-    color: #0a2458;
-}
-
-#presWrapper2 img {
-    position: absolute;
-    /* margin-top: 72px; */
-    /* margin-left: 20px; */
-    max-width: 215px;
-    max-height: 280px;
-}
-
-#presWrapper2 p {
-    letter-spacing: 0.2rem;
-    width: 750px;
-    margin-top: 45px;
-    line-height: 45px;
-    font-size: 27px;
-    margin-left: 265px;
-    text-align: left;
-    position: absolute;
-}
-
-#presWrapper2 .redwords {
-    color: rgb(178, 34, 52);
-}
