@@ -26,6 +26,15 @@ const colPic = document.getElementById("colPic");
 const colonyList = document.getElementsByClassName("colony-list");
 const stateList = document.getElementsByClassName("state-list");
 const presList = document.getElementsByClassName("pres-list");
+const monName = document.getElementById("monName");
+const monPic = document.getElementById("monPic");
+const randMon = document.getElementById("randMon");
+const monLocation = document.getElementById("location");
+const monAge = document.getElementById("age");
+const monCompleted = document.getElementById("completed");
+const monDesignatedDate = document.getElementById("designatedDate");
+const monDesignatedBy = document.getElementById("designatedBy");
+const monVisitors = document.getElementById("visitors");
 const zIndex = document.getElementsByClassName("zindex");
 const natMon = [
     "Statue of Liberty",
@@ -33,10 +42,10 @@ const natMon = [
     "Castillo de San Marcos",
     "Mount Rushmore",
     "Grand Canyon",
-    "Redwood Forest",
+    "Misty Fjords",
     "Devil's Tower",
     "Giant Sequoia National Monument",
-    "World War II Valor in the Pacific",
+    "USS Arizona Memorial",
     "Little Bighorn Battlefield"
 ];
 fetch(
@@ -67,8 +76,6 @@ function getRandomState(statesJson) {
     ratif.textContent = randomState.ratified;
     //  console.log(stateIndex);  console.log(randomState);
 }
-
-
 
 fetch(
     "https://gist.githubusercontent.com/Kenaxion/3689e2a3b1b1e5435ca5d96b27e72a97/r" +
@@ -101,7 +108,6 @@ function getRandomPresident(presJson) {
 // h.addEventListener("click", flagShow) } function flagShow (h) {   flag.src =
 // "flags/"   if (states.textContent === ) }
 
-
 fetch(
     "https://gist.githubusercontent.com/Kenaxion/ce6f1af7110dbec3c59518cf441ee786/raw/d5914ee6bb6129fb26fe0dd7d9f71f149d4324f8/colonies.json"
 )
@@ -127,3 +133,42 @@ function getRandomColony(colonyJson) {
     console.log(colIndex);
     console.log(randomColonies);
 }
+
+fetch(
+    "https://gist.githubusercontent.com/Kenaxion/0155cf0d0e9b1d82990abe50af9d296d/raw/2d9406818ac5a49cb3d4c7d05b566464b6f444dd/monuments.json"
+)
+    .then(response => response.json())
+    .then(function (data) {
+        addNatMonDropdown(data);
+        getRandomNatMon(data);
+        setInterval(function () {
+            getRandomNatMon(data);
+        }, 5000);
+    })
+
+function getRandomNatMon(natMonJson) {
+    let natMonIndex = Math.floor(Math.random() * natMonJson.length);
+    let randomNatMon = natMonJson[natMonIndex];
+    monName.textContent = randomNatMon.monument;
+    monLocation.textContent = randomNatMon.est;
+    colCap.textContent = randomNatMon.location;
+    monAge.textContent = randomNatMon.age;
+    monCompleted.textContent = randomNatMon.completed;
+    monDesignatedDate.textContent = randomNatMon.designation_date;
+    monDesignatedBy.textContent = randomNatMon.designated_by;
+    monVisitors.textContent = randomNatMon.visitors;
+    monPic.textContent = randomNatMon.monument;
+    monPic.src = "monuments/" + randomNatMon.monument + ".png";
+    console.log(natMonIndex);
+    console.log(randomNatMon);
+}
+
+// const monName = document.getElementById("monName");
+// const monPic = document.getElementById("monPic");
+// const randMon = document.getElementById("randMon");
+// const monLocation = document.getElementById("location");
+// const monAge = document.getElementById("age");
+// const monCompleted = document.getElementById("completed");
+// const monDesignatedDate = document.getElementById("designatedDate");
+// const monDesignatedBy = document.getElementById("designatedBy");
+// const monVisitors = document.getElementById("visitors");

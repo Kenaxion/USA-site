@@ -25,8 +25,8 @@ function addPresidentDropdown(presJson) {
     }
 }
 
-function addNatMon(natMonLi) {
-    for (const i of natMonLi) {
+function addNatMonDropdown(natMonJson) {
+    for (const i of natMonJson) {
         const li = document.createElement("li");
         li.className = "mon-list";
         li.textContent = i;
