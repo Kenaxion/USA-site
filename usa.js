@@ -30,24 +30,11 @@ const monName = document.getElementById("monName");
 const monPic = document.getElementById("monPic");
 const randMon = document.getElementById("randMon");
 const monLocation = document.getElementById("location");
-const monAge = document.getElementById("age");
-const monCompleted = document.getElementById("completed");
-const monDesignatedDate = document.getElementById("designatedDate");
-const monDesignatedBy = document.getElementById("designatedBy");
-const monVisitors = document.getElementById("visitors");
+const monCompletedAge = document.getElementById("completed_age");
+const designatedDate = document.getElementById("designatedDate");
 const zIndex = document.getElementsByClassName("zindex");
-const natMon = [
-    "Statue of Liberty",
-    "Independence Hall",
-    "Castillo de San Marcos",
-    "Mount Rushmore",
-    "Grand Canyon",
-    "Misty Fjords",
-    "Devil's Tower",
-    "Giant Sequoia National Monument",
-    "USS Arizona Memorial",
-    "Little Bighorn Battlefield"
-];
+const NationalMonuments = document.getElementById("NationalMonuments");
+
 fetch(
     "https://gist.githubusercontent.com/Kenaxion/38448ed83c8dcb23380fc361ed5f554b/r" +
     "aw/5ac1ad99f2121238411d080f125777ca11accbc4/code.json"
@@ -78,8 +65,7 @@ function getRandomState(statesJson) {
 }
 
 fetch(
-    "https://gist.githubusercontent.com/Kenaxion/3689e2a3b1b1e5435ca5d96b27e72a97/r" +
-    "aw/c178b59fa65bcca8abb6deefe2f9be6ec6dcb14a/presidentlist.json"
+    "https://gist.githubusercontent.com/Kenaxion/3689e2a3b1b1e5435ca5d96b27e72a97/raw/a1ffaded12e59984c6bcc2ea49f180066b65ac47/presidentlist.json"
 )
     .then(response => response.json())
     .then(function (data) {
@@ -135,7 +121,7 @@ function getRandomColony(colonyJson) {
 }
 
 fetch(
-    "https://gist.githubusercontent.com/Kenaxion/0155cf0d0e9b1d82990abe50af9d296d/raw/2d9406818ac5a49cb3d4c7d05b566464b6f444dd/monuments.json"
+    "https://gist.githubusercontent.com/Kenaxion/0155cf0d0e9b1d82990abe50af9d296d/raw/2f5654252708f6f5e750de8568b60ef74ae9f77e/monuments.json"
 )
     .then(response => response.json())
     .then(function (data) {
@@ -150,25 +136,11 @@ function getRandomNatMon(natMonJson) {
     let natMonIndex = Math.floor(Math.random() * natMonJson.length);
     let randomNatMon = natMonJson[natMonIndex];
     monName.textContent = randomNatMon.monument;
-    monLocation.textContent = randomNatMon.est;
-    colCap.textContent = randomNatMon.location;
-    monAge.textContent = randomNatMon.age;
-    monCompleted.textContent = randomNatMon.completed;
-    monDesignatedDate.textContent = randomNatMon.designation_date;
-    monDesignatedBy.textContent = randomNatMon.designated_by;
-    monVisitors.textContent = randomNatMon.visitors;
+    monLocation.textContent = randomNatMon.location;
+    monCompletedAge.textContent = randomNatMon.completed_age;
+    designatedDate.textContent = randomNatMon.designated_date;
     monPic.textContent = randomNatMon.monument;
     monPic.src = "monuments/" + randomNatMon.monument + ".png";
     console.log(natMonIndex);
     console.log(randomNatMon);
 }
-
-// const monName = document.getElementById("monName");
-// const monPic = document.getElementById("monPic");
-// const randMon = document.getElementById("randMon");
-// const monLocation = document.getElementById("location");
-// const monAge = document.getElementById("age");
-// const monCompleted = document.getElementById("completed");
-// const monDesignatedDate = document.getElementById("designatedDate");
-// const monDesignatedBy = document.getElementById("designatedBy");
-// const monVisitors = document.getElementById("visitors");

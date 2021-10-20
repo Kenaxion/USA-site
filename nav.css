@@ -26,19 +26,13 @@ nav > ul {
 
 nav a {
     text-decoration: none;
-    /* justify-content: space-between; */
-    /* text-align: center; */
     color: rgb(178, 34, 52);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav li h2 {
-    /* position: relative; */
-    /* top: -17.5px; */
     letter-spacing: 0.3rem;
-    /* display: flex; */
-    margin: 1.5px 29.4px;
-    /* padding: 22px 29.4px; */
+    margin: auto 29.4px;
 }
 
 /* navbar hover effect */
@@ -51,13 +45,46 @@ nav > ul > li:hover {
 
 nav li ul li {
     cursor: pointer;
-    width: 15%;
     display: flex;
-    justify-content: space-evenly;
-    line-height: 22px;
     letter-spacing: 0.2rem;
     color: white;
 }
+
+nav #States li {
+    font-size: 23px;
+    width: 25%;
+    justify-content: space-evenly;
+    /* line-height: 40px; */
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+nav #col li {
+    font-size: 23px;
+    width: 40%;
+    justify-content: space-around;
+    /* line-height: 20px; */
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+nav #Presidents li {
+    font-size: 23px;
+    width: 27%;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+nav #NationalMonuments li {
+    font-size: 23px;
+    width: 50%;
+    justify-content: space-around;
+    /* margin: auto; */
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
 
 .dropDown {
     background: #0a2458;
@@ -69,6 +96,7 @@ nav li ul li {
     flex-wrap: wrap;
     top: 35px;
     left: 0;
+    /* width: 100em; */
 }
 
 /* drop down height */
@@ -82,39 +110,18 @@ nav li #States li:hover {
     transform: scale(1.3);
 }
 
-nav #States li {
-    font-size: 15px;
-}
-
 nav #col ul li a {
     color: white;
 }
 
-nav #col ul li a:hover {
+nav #col ul li:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.1);
-}
-
-nav #NationalMonuments li {
-    line-height: 22px;
-    width: 18%;
-    justify-content: space-evenly;
-    /* margin: auto; */
-    margin-top: 5px;
-    margin-bottom: 7px;
 }
 
 nav #NationalMonuments li:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.1);
-}
-
-nav #Presidents li {
-    line-height: 22px;
-    width: 25%;
-    justify-content: space-around;
-    margin-top: 5px;
-    margin-bottom: 7px;
 }
 
 nav #Presidents li a {

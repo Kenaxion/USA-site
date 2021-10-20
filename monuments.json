@@ -1,0 +1,73 @@
+[
+    {
+      "monument": "Statue of Liberty",
+      "location": "New York City, New York",
+      "completed": "October 28, 1886",
+      "designation_date": "October 15, 1924",
+      "visitors": "4.24 Million"
+    },
+      {
+      "monument": "Independence Hall",
+      "location": "Philadelphia, Pennsylvania",
+      "completed": "1753",
+      "designated_date": "October 15, 1966",
+      "visitors": "4.26 Million"
+      },
+       {
+      "monument": "Castillo de San Marcos",
+      "location": "Saint Augustine, Florida",
+      "completed": "1695",
+      "designated_date": "October 15, 1924",
+      "visitors": "800,000"
+      },
+       {
+      "monument": "Mount Rushmore",
+      "location": "Black Hills in Pennington County, South Dakota",
+      "completed": "October 31, 1941",
+      "designated_date": "October 31, 1941",
+      "visitors": "2 Million"
+      },
+       {
+      "monument": "Grand Canyon",
+      "location": "Arizona",
+      "age": "5-6 Million Years",
+      "designated_date": "January 11, 1908",
+      "designated_by": "President Theodore Roosevelt",
+      "visitors": "5.9 Million"
+      },
+       {
+      "monument": "Giant Sequoia National Monument",
+      "location": "California",
+      "age": "2,000-3,000 Years",
+      "designated_date": "April 15, 2000",
+      "designated_by": "President Bill Clinton",
+      "visitors": "1.6 Million"
+      },
+       {
+      "monument": "Misty Fjords",
+      "location": "Ketchikan Gateway Borough, Alaska",
+      "age": "50-70 Million Years",
+      "designated_date": "December 1, 1978",
+      "designated_by": "President Jimmy Carter"
+      },
+       {
+      "monument": "Devils Tower",
+      "location": "Crook County, Wyoming",
+      "age": "40.5 Million Years",
+      "designated_date": "September 24, 1906",
+      "designated_by": "President Theodore Roosevelt",
+      "visitors": "499,000"
+      },
+       {
+      "monument": "USS Arizona Memorial",
+      "location": "Pearl Harbor Honolulu, Hawaii",
+      "designated_date": "May 30, 1962",
+      "designated_by": "Congressman Olin E. Teague"
+      },
+       {
+      "monument": "Little Bighorn Battlefield National Monument",
+      "location": "Big Horn County, Montana",
+      "designated_date": "January 29, 1879",
+      "designated_by": "Secretary of War George W. McCrary"
+      }
+    ]

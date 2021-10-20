@@ -31,12 +31,12 @@ header > ul {
 
 header ul #title1 {
     letter-spacing: 0.5rem;
-    width: 720px;
-    top: 10px;
+    width: 1020px;
+    bottom: 5px;
     left: 20px;
     position: relative;
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 45px;
     border-bottom: double white 5px;
     text-shadow: 0 3px 8px black;
 }
@@ -47,33 +47,63 @@ header ul #title2 {
     letter-spacing: 0.45rem;
     position: relative;
     font-weight: lighter;
-    font-size: 27px;
-    width: 255px;
+    font-size: 38px;
+    width: 555px;
     left: 740px;
-    top: 5px;
+    bottom: 10px;
     border-top: double white 5px;
-    padding-top: 2px;
+    /* padding-top: 2px; */
     text-shadow: 0 3px 8px black;
 }
 
 #wrapper2 {
     background-color: rgb(255, 239, 209);
-    height: 380px;
-    top: 170px;
+    height: 303px;
+    top: 70px;
     width: 70rem;
     box-sizing: content-box;
     flex-wrap: wrap;
     position: relative;
 }
 
+#wrapper2 > h2 {
+    position: absolute;
+    width: 30rem;
+    margin-top: 5rem;
+    margin-left: 72rem;
+    font-size: 38px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
+
+#wrapper2 > h1::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 90px;
+    height: 2px;
+    width: 45.8%;
+    background: #0a2458;
+}
+
+#wrapper2 > h1 {
+    position: absolute;
+    width: 45rem;
+    margin-top: 9rem;
+    margin-left: 72rem;
+    font-size: 70px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
+
 #state-teaser {
     float: left;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 3px;
     margin-left: 30px;
 }
 
-#state-teaser > h1 {
+#state-teaser h1 {
     font-size: 2.6rem;
     letter-spacing: .019rem;
     width: 550px;
@@ -82,14 +112,14 @@ header ul #title2 {
 
 #state-teaser img {
     position: absolute;
-    max-width: 450px;
-    max-height: 240px;
+    max-width: 400px;
+    max-height: 230px;
+    box-shadow: 0px 0px 5px 1px black;
 }
 
 #state-teaser p {
     letter-spacing: 0.2rem;
     width: 580px;
-    /* top: 0px; */
     line-height: 45px;
     font-size: 1.8rem;
     margin-left: 465px;
@@ -107,52 +137,80 @@ header ul #title2 {
 
 #coloniesWrapper {
     float: right;
-    margin-left: auto;
-    /* margin-right: 0; */
     background-color: rgb(255, 239, 209);
-    height: 380px;
-    top: 200px;
+    height: 303px;
+    top: 83px;
     width: 70rem;
     box-sizing: content-box;
     flex-wrap: wrap;
     position: relative;
 }
 
-#coloniesWrapper2 {
-    font-family: "Mercury Display Semibold";
-    padding-left: 30px;
+#colTitles {
+    position: absolute;
+    margin-left: 1rem;
+    z-index: -1;
+    margin-top: 7.5rem;
 }
 
-#coloniesWrapper2 #colonyName {
-    text-align: left;
+#colTitles h2 {
+    position: absolute;
+    width: 30rem;
+    margin-top: 2rem;
+    font-size: 38px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
+
+#colTitles h1::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 90px;
+    height: 2px;
+    width: 85%;
+    background: #0a2458;
+}
+
+#colTitles h1 {
+    position: absolute;
+    width: 54rem;
+    margin-top: 6rem;
+    font-size: 70px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
+
+#coloniesWrapper2 {
+    position: absolute;
+    font-family: "Mercury Display Semibold";
+    margin-left: 30px;
+    margin-top: 3px; 
+}
+
+#coloniesWrapper2 h1 {
     font-size: 2.6rem;
     letter-spacing: .019rem;
-    color: #0a2458;
+    position: relative;
     width: 68rem;
-    margin-top: 1rem;
-    position: absolute;
+    color: #0a2458;
 }
 
-#coloniesWrapper2 #colPic {
+#coloniesWrapper2 img {
     position: absolute;
-    /* margin: auto; */
-    /* margin-top: 4em; */
-    /* align-items: center; */
-    /* display: block; */
-    margin-top: 5.5em;
-    margin-bottom: 10em;
-    vertical-align: center;
-    width: auto;
-    min-height: 210px;
+    margin-top: 10px;
+    max-width: 340px;
     max-height: 210px;
+    border-radius: 5px;
 }
 
-#coloniesWrapper2 #rand-colony {
+#coloniesWrapper2 p {
     letter-spacing: 0.1rem;
-    margin-top: 5rem;
+    /* width: 750px; */
+    margin-top: 20px;
     line-height: 45px;
     font-size: 1.8rem;
-    margin-left: 27rem;
+    margin-left: 370px;
     text-align: left;
     position: absolute;
 }
@@ -161,10 +219,45 @@ header ul #title2 {
     color: rgb(178, 34, 52);
 }
 
+#presTitles {
+    position: absolute;
+    margin-left: 72rem;
+    z-index: -1;
+    margin-top: 28.5rem;
+}
+
+#presTitles h2 {
+    position: absolute;
+    width: 30rem;
+    margin-top: 2rem;
+    font-size: 38px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
+
+#presTitles h1::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 90px;
+    height: 2px;
+    width: 92.5%;
+    background: #0a2458;
+}
+
+#presTitles h1 {
+    position: absolute;
+    width: 33rem;
+    margin-top: 6rem;
+    font-size: 70px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
+
 #presWrapper {
     background-color: rgb(255, 239, 209);
-    height: 380px;
-    top: 610px;
+    height: 303px;
+    top: 399px;
     width: 70rem;
     box-sizing: content-box;
     flex-wrap: wrap;
@@ -174,32 +267,30 @@ header ul #title2 {
 #presWrapper2 {
     position: absolute;
     font-family: "Mercury Display Semibold";
+    margin-top: 3px;
     margin-left: 30px;
 }
 
 #presWrapper2 h1 {
     font-size: 2.6rem;
     letter-spacing: .019rem;
-    /* position: absolute; */
+    position: relative;
     width: 850px;
-    margin-top: 8px;
-    /* margin-left: 20px; */
-    /* bottom: .5px; */
     color: #0a2458;
 }
 
 #presWrapper2 img {
     position: absolute;
-    /* margin-top: 72px; */
-    /* margin-left: 20px; */
-    max-width: 215px;
-    max-height: 280px;
+    /* max-width: 215px; */
+    max-height: 230px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px black;
 }
 
 #presWrapper2 p {
     letter-spacing: 0.2rem;
     width: 750px;
-    margin-top: 45px;
+    margin-top: 20px;
     line-height: 45px;
     font-size: 1.8rem;
     margin-left: 265px;
@@ -211,34 +302,88 @@ header ul #title2 {
     color: rgb(178, 34, 52);
 }
 
-
-/* .fade {
-    -webkit-animation: fade 1.5s 5s infinite;
-    animation: fadeIn 1s 4s infinite;
-    animation-timing-function: ease-in;
-} */
-
-/* @-webkit-keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+#monTitles {
+    position: absolute;
+    margin-left: 1rem;
+    z-index: -1;
+    margin-top: 28.5rem;
 }
 
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-    }
-} */
+#monTitles h2 {
+    position: absolute;
+    width: 30rem;
+    margin-top: 2rem;
+    font-size: 38px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
 
-/* #presWrapper {
-    border-top: black solid;
-    margin-top: 190px;
-    margin-left: 12%;
-    width: 75%;
-} */
+#monTitles h1::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 90px;
+    height: 2px;
+    width: 87.8%;
+    background: #0a2458;
+}
+
+#monTitles h1 {
+    position: absolute;
+    width: 54rem;
+    margin-top: 6rem;
+    font-size: 70px;
+    letter-spacing: 0.2rem;
+    color: rgb(178, 34, 52);
+}
+
+#monWrapper {
+    float: right;
+    margin-left: auto;
+    background-color: rgb(255, 239, 209);
+    height: 303px;
+    top: 411px;
+    width: 70rem;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#monWrapper2 {
+    position: absolute;
+    font-family: "Mercury Display Semibold";
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+#monWrapper2 h1 {
+    font-size: 2.6rem;
+    letter-spacing: .019rem;
+    position: relative;
+    width: 1000px;
+    color: #0a2458;
+}
+
+#monWrapper2 img {
+    position: absolute;
+    margin-top: 10px;
+    max-width: 350px;
+    max-height: 220px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+#monWrapper2 p {
+    letter-spacing: 0.1rem;
+    width: 710px;
+    margin-top: 45px;
+    line-height: 45px;
+    font-size: 1.8rem;
+    margin-left: 380px;
+    text-align: left;
+    position: absolute;
+}
+
+#monWrapper2 .redwords {
+    color: rgb(178, 34, 52);
+}

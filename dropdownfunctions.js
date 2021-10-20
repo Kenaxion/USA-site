@@ -29,7 +29,7 @@ function addNatMonDropdown(natMonJson) {
     for (const i of natMonJson) {
         const li = document.createElement("li");
         li.className = "mon-list";
-        li.textContent = i;
+        li.textContent = i.monument;
         NationalMonuments.append(li);
     }
 }
