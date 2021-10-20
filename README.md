@@ -6,8 +6,8 @@ A non-biased, purely factual, straight-to-the-point, and abridged version of our
 
 That means, no politics, no opinions, no religion, just the United States of America in all its splendor. 
 
-The site utilizes HTML for the basic framework, CSS for hover effects, fade in & outs, dropdown menus, the state flag changes, and several other design assets, JavaScript for the slightly more indepth animation aspects, and using JSON for the state database. It is also still a work-in-progress. I have plans on adding additional tabs to the navbar such as a list of Presidents and trivia. Make the site more interactive where clicking on a state will show it's info and pause the slideshow on that state, and add many more features. 
+The site utilizes HTML for the basic framework, CSS for hover effects, fade in & outs, dropdown menus, shadows, and several other design assets. JavaScript for the slightly more indepth animation aspects, such as the random rotations of all the information, and using JSON for the database's. It is all still a work-in-progress. I have plans on adding additional interactivity, trivia, and a lot more.
 
-Video walkthrough of the site: https://www.youtube.com/watch?v=-v999WVNvps
+Video walkthrough of the site: https://www.youtube.com/watch?v=-v999WVNvps (outdated I just haven't done a more recent walkthrough)
 
 ![Screenshot (208)](https://user-images.githubusercontent.com/67118137/138011460-4e755855-986d-427c-8830-3690a4cf80e7.png)
